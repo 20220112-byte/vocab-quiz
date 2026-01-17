@@ -46,6 +46,7 @@ def check(d: dict):
 @app.get("/favicon.ico")
 def favicon():
     return FileResponse("static/favicon.ico")  # 置いてないならこの関数は消してOK
+
 if __name__ == "__main__":
     import uvicorn
     import os
